@@ -12,4 +12,30 @@ class MainActivity : AppCompatActivity() {
 
         Log.i("Lifecycle","MainActivity.onCreate() called")
     }
+
+    override fun onStart(){
+        super.onStart()
+        Log.i("Lifecycle","MainActivity.onStart() called")
+    }
+
+    override fun onResume(){
+        super.onResume()
+        Log.i("Lifecycle","MainActivity.onResume() called")
+    }
+
+    override fun onPause(){
+        super.onPause()
+        Log.i("Lifecycle","MainActivity.onPause() called")
+    }
+
+    override fun onStop(){
+        super.onStop()
+        Log.i("Lifecycle","MainActivity.onStop() called")
+    }
+
+    override fun onDestroy(){
+        super.onDestroy()
+        Log.i("Lifecycle","MainActivity.onDestroy() called")
+    }
+
 }
